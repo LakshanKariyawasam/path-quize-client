@@ -60,7 +60,7 @@ public class Login extends JFrame {
 	public static int userId;
 	public static String username;
 	public static String firstname;
-	public static String ispaticipated;
+	public static boolean ispaticipated;
 
 	/**
 	 * Launch the application.
@@ -235,7 +235,7 @@ public class Login extends JFrame {
 								userId = Integer.parseInt(loginData.get(0).getString("userid"));
 								firstname = loginData.get(0).getString("firstname").toUpperCase();
 								username = loginData.get(0).getString("email");
-								ispaticipated = loginData.get(0).getString("ispaticipated");
+								ispaticipated = loginData.get(0).getBoolean("ispaticipated");
 								AdminHome adminHome = new AdminHome(null);
 								adminHome.setUndecorated(true);
 								adminHome.setVisible(true);
@@ -245,7 +245,7 @@ public class Login extends JFrame {
 								userId = Integer.parseInt(loginData.get(0).getString("userid"));
 								firstname = loginData.get(0).getString("firstname").toUpperCase();
 								username = loginData.get(0).getString("email");
-								ispaticipated = loginData.get(0).getString("ispaticipated");
+								ispaticipated = loginData.get(0).getBoolean("ispaticipated");
 								UserHome userHome = new UserHome();
 								userHome.setUndecorated(true);
 								userHome.setVisible(true);

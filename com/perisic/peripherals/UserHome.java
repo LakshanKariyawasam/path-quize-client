@@ -534,8 +534,8 @@ public class UserHome extends JFrame {
 		);
 		panel_Quiz2.setLayout(gl_panel_Quiz2);
 
-
-		if(Login.ispaticipated == "false") {
+		System.out.println("ispaticipated is :: " + Login.ispaticipated );
+		if(Login.ispaticipated == false) {
 			contentPane.add(panel_Quiz);
 		} else {
 			contentPane.add(panel_Quiz3);

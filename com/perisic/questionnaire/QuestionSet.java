@@ -162,7 +162,7 @@ public class QuestionSet {
     }
 	
 	public int createPaneUser(String currntUserName, String usrname, String fname, String lname, boolean isSuper) throws RemoteException{
-        return myQuestions.createPaneUser(currntUserName, usrname, lname, isSuper);
+        return myQuestions.createPaneUser(currntUserName, usrname, fname, lname, isSuper);
     }
 	
 	public int updatePaneUser(String currntUserName, String usrname, String fname, String lname, final boolean isSuper, boolean isPasswordReset, boolean active) throws RemoteException {
