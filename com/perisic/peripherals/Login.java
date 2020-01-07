@@ -235,7 +235,7 @@ public class Login extends JFrame {
 								userId = Integer.parseInt(loginData.get(0).getString("userid"));
 								firstname = loginData.get(0).getString("firstname").toUpperCase();
 								username = loginData.get(0).getString("email");
-								ispaticipated = loginData.get(0).getBoolean("ispaticipated");
+//								ispaticipated = loginData.get(0).getBoolean("ispaticipated");
 								AdminHome adminHome = new AdminHome(null);
 								adminHome.setUndecorated(true);
 								adminHome.setVisible(true);

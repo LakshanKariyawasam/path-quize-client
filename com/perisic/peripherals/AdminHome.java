@@ -375,6 +375,11 @@ public class AdminHome extends JFrame {
 				if (result == JOptionPane.OK_OPTION) {
 					QuestionSet questionnaire = new QuestionSet();
 					try {
+						System.out.println("Login.username is :: " + Login.username);
+						System.out.println("email.getText() is :: " + email.getText());
+						System.out.println("firstnameField.getText() is :: " + firstnameField.getText());
+						System.out.println("lastnameField.getText() is :: " + lastnameField.getText());
+						System.out.println("superUserVal is :: " + superUserVal);
 						val_user = questionnaire.createPaneUser(Login.username, email.getText(), firstnameField.getText(), lastnameField.getText(), superUserVal);
 						questionnaire.UserDetails();
 						if(val_user == 1) {
