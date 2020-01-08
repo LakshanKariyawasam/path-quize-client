@@ -567,7 +567,7 @@ public class UserHome extends JFrame {
 
 		for (int i = 0; i < 1; i++) {
 
-			JLabel lblNewLabel = new JLabel(questionList.get(1).get(0));
+			JLabel lblNewLabel = new JLabel(questionList.get(1).get(2));
 			lblNewLabel.setForeground(new Color(51, 51, 51));
 			lblNewLabel.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 15));
 
@@ -579,7 +579,7 @@ public class UserHome extends JFrame {
 			textField.setBorder(new EmptyBorder(5, 5, 5, 5));
 			textField.setColumns(10);
 
-			JLabel lblAreYouWorking_1 = new JLabel(questionList.get(1).get(1));
+			JLabel lblAreYouWorking_1 = new JLabel(questionList.get(1).get(0));
 			lblAreYouWorking_1.setForeground(new Color(51, 51, 51));
 			lblAreYouWorking_1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 15));
 
@@ -658,7 +658,7 @@ public class UserHome extends JFrame {
 			rdbtnDegree.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 15));
 			rdbtnDegree.setBackground(Color.WHITE);
 
-			JLabel lblWhatKindOf = new JLabel(questionList.get(1).get(2));
+			JLabel lblWhatKindOf = new JLabel(questionList.get(1).get(1));
 			lblWhatKindOf.setForeground(new Color(51, 51, 51));
 			lblWhatKindOf.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 15));
 			lblWhatKindOf.setVisible(false);
